@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "react-components",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -26,7 +26,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "eaweb.react"
   },
   /**
    * main configuration for component dependency resolution.
@@ -37,9 +37,17 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@testing-library/react": "11.2.6",
+        "react": "17.0.2"
+      },
       "peerDependencies": {}
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -54,7 +62,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      // "teambit.react/react": { }
+      "teambit.react/react": {}
     }
   }
 }
