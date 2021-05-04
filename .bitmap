@@ -3,7 +3,7 @@
 {
     "ui/forms/file-dropzone": {
         "scope": "eaweb.react",
-        "version": "0.0.2",
+        "version": "1.0.0",
         "mainFile": "index.ts",
         "rootDir": "react/ui/forms/file-dropzone"
     },
