@@ -1,0 +1,26 @@
+---
+description: 'A dropzone component to handle file selection.'
+labels: ['drop', 'dropzone', 'file', 'input', 'form']
+---
+
+import { FileDropzone } from './file-dropzone';
+
+## React Component for handling file selection by dropping
+
+This is a wrapper of react-dropzone to set some basic configuration, aimed to handle excel files
+
+### Component usage
+```js
+<FileDropzone
+    extensions=".ods,.csv,.xls,.xlsx"
+    onFileSelected={ handleFileSelected } />
+```
+
+### Using props to customize the text
+
+Modify the extensions to see it change live:
+```js live
+<FileDropzone
+    extensions=".ods,.csv,.xls,.xlsx"
+    onFileSelected={ (files) => console.log(files) } />
+```
